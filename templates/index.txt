@@ -1,0 +1,20 @@
+responses
+=========
+
+responses is a tool used for returning canned JSON responses.
+
+{% if routes -%}
+The configured routes are:
+
+    {% for route in routes -%}
+    * {{ route }}
+    {% endfor -%}
+
+{% else -%}
+To create canned responses, create a responses.yaml file (you can find an example
+in the `example` directory included with this project) and place it in the root
+of the project. This page will display configured routes, if any are found.
+{% endif %}
+
+(c) 2014 Bill Israel <bill.israel@gmail.com>
+Code downloadable from https://github.com/epochblue/responses and available in the public domain.

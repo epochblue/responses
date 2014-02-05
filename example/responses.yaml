@@ -1,0 +1,64 @@
+'example/user':
+  GET:
+    status_code: 200
+    response:
+      - id: 1
+        name: 'Joe Public'
+        email: 'joe.public@example.com'
+        address:
+          number: 123
+          street: 'Main St'
+          state: 'TN'
+          country: 'USA'
+      - id: 2
+        name: 'Jane Public'
+        email: 'jane.public@example.com'
+        address:
+          number: 111
+          street: 'Elm St'
+          state: 'AL'
+          country: 'USA'
+      - id: 3
+        name: 'Example User'
+        email: 'example.user@example.com'
+        address:
+          number: 1234
+          street: 'Example Ave'
+          state: 'AZ'
+          country: 'USA'
+
+  POST:
+    status_code: 201
+    response:
+      id: 2
+      name: 'Jane Public'
+      email: 'jane.public-updated@example.com'
+      address:
+        number: 111
+        street: 'Elm St'
+        state: 'AL'
+        country: 'USA'
+
+'example/user/2':
+  GET:
+    status_code: 200
+    response:
+      id: 2
+      name: 'Jane Public'
+      email: 'jane.public@example.com'
+
+  PUT:
+    status_code: 200
+    response:
+      id: 2
+      name: 'Jane Public'
+      email: 'jane.public-updated@example.com'
+      address:
+        number: 111
+        street: 'Elm St'
+        state: 'AL'
+        country: 'USA'
+
+  DELETE:
+    status_code: 200
+    response:
